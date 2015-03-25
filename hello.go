@@ -17,7 +17,9 @@ func hello() {
 type Message struct {
 	Uid		int 	`json:"uid"`
 	Username string `json:"username"`
-	Text 	string	`json:"text"` 	
+	Text 	string	`json:"text"` 
+	Lat 	string	`json:"lat"`
+	Lng		string	`json:"lng"`	
 }
 
 func Messages(w http.ResponseWriter, r *http.Request) {
